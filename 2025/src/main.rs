@@ -2,12 +2,14 @@ use anyhow::Result;
 use argh::FromArgs;
 
 mod day1;
+mod day2;
 
 fn main() -> Result<()> {
     let App { day } = argh::from_env();
     match day {
         0 => anyhow::bail!("day number start from 1"),
         1 => day1::run(),
+        2 => day2::run(),
         _ => anyhow::bail!("unknown day"),
     }
 }
