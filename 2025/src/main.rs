@@ -7,6 +7,7 @@ mod day3;
 mod day4;
 mod day5;
 mod day6;
+mod day7;
 
 fn main() -> Result<()> {
     let App { day } = argh::from_env();
@@ -18,6 +19,7 @@ fn main() -> Result<()> {
         4 => day4::run(),
         5 => day5::run(),
         6 => day6::run(),
+        7 => day7::run(),
         _ => anyhow::bail!("unknown day"),
     }
 }
