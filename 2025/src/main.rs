@@ -2,6 +2,7 @@ use anyhow::Result;
 use argh::FromArgs;
 
 mod day1;
+mod day10;
 mod day2;
 mod day3;
 mod day4;
@@ -24,6 +25,7 @@ fn main() -> Result<()> {
         7 => day7::run(),
         8 => day8::run(),
         9 => day9::run(),
+        10 => day10::run(),
         _ => anyhow::bail!("unknown day"),
     }
 }
